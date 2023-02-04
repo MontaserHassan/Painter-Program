@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./canvas.css" />
+    <script src="./canvas.js" defer></script>
+    <title>Canvas</title>
+  </head>
+  <body>
+    <h1>This is Painter Program with "CANVAS"</h1>
+
+    <div class="container">
+      <button class="shape" id="FreeHand">Draw FreeHand</button>
+      <button class="shape" id="lineShape">Create Line</button>
+      <button class="shape" id="rectShape">Create Rectangle</button>
+      <button class="shape" id="circleShape">Create Circle</button>
+      <button class="shape" id="recycleBin">Recycle Bin</button>
+    </div>
+    <div class="leftCorner">
+      <div id="fill-color">
+        <input type="checkbox" id="fillColor" value="Fill Color" />
+        <label for="Fill Color">Fill Color</label>
+      </div>
+      <div class="colors">
+        <h4 id="job">Color</h4>
+        <ul class="options">
+          <li class="option selected"></li>
+          <li class="option"></li>
+          <li class="option"></li>
+          <li class="option"></li>
+          <li class="option"></li>
+          <li class="option"></li>
+        </ul>
+      </div>
+    </div>
+
+    <canvas
+      id="paintLand"
+      style="
+        border: 2px solid black;
+        display: inline;
+        width: 650px;
+        height: 400px;
+        margin-left: 450px;
+        margin-top: -290px;
+        border-radius: 8px;
+      "
+    ></canvas>
+  </body>
+</html>

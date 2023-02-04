@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    color: wheat; 
+    text-align: center; 
+    margin-top: 10px; 
+    background-color: black; 
+    padding: 10px; 
+    border-radius: 5px;
+}
+
+.container{
+    width: 90%;
+    height: 80px;
+    background-color: peru;   
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+button{
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    display: inline;
+    width: 100px;
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 100px;
+    margin-bottom: 8px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover{
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    display: inline;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.leftCorner{
+    width: 20%;
+    height: 280px;
+    background-color: peru;   
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    padding-right: 35px;
+    border-radius: 7px;
+}
+
+h4{
+    margin-left: 100px;
+}
+
+#fill-color{
+    margin: 50px 60px;
+}
+
+.colors .options{
+    display: flex;
+    justify-content: space-between;
+}
+
+.options{
+    list-style-type: none;
+}
+
+.colors .option{
+    background-color: black;
+    margin-top: 3px;
+    border-radius: 50%;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.colors .option:nth-child(1){
+    background-color: black;
+}
+
+.colors .option:nth-child(2){
+    background-color: blue;
+}
+.colors .option:nth-child(3){
+    background-color: yellow;
+}
+.colors .option:nth-child(4){
+    background-color: pink;
+}
+.colors .option:nth-child(5){
+    background-color: red;
+}
+.colors .option:nth-child(6){
+    background-color: white;
+}
+
+.colors .option.selected::before{
+    content: "";
+    background: inherit;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    border-radius: inherit;
+    border: 2px solid peru;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
